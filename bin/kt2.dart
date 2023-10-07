@@ -10,7 +10,7 @@ void main(List<String> arguments) async {
   var response = await client.get(url);
   CarData data = CarData.fromJson(response.data);
 
- List<car> carsMassive = data.cars;
+ List<Car> carsMassive = data.cars;
 
 double carw = 0;
 double pricew = 0;
